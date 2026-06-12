@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorcycle Parts - Product Page</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <header>
+        <h1>Motorcycle Parts Shop</h1>
+        <section class="sorting-section">
+            <label for="sort-options">Sort by:</label>
+            <select id="sort-options">
+                <option value="default">Default</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="name-asc">Name: A to Z</option>
+                <option value="name-desc">Name: Z to A</option>
+            </select>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <!-- Product 1: Metzeler Racetecs -->
+        <div class="product">
+            <div class="product-image">
+                <img src="tires.jpg" alt="Motorcycle Part">
+            </div>
+            <div class="product-details">
+                <h2>Metzeler Racetecs</h2>
+                <p class="description">Choose the Metzeler Racetec™ TD Slick tires and discover the pleasure of driving safely and with high performance!</p>
+                <p class="price">$100.35</p>
+                <h4>Leave a Review</h4>
+                <form id="review-form-tyre" onsubmit="submitReview(event, 'review-form-tyre', 'reviews-container-tyre')">
+                    <textarea id="review-content-tyre" placeholder="Your Review" required></textarea>
+                    <button type="submit">Submit Review</button>
+                </form>
+                <div id="reviews-container-tyre"></div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 2: Disc Brake Pads -->
+        <div class="product">
+            <div class="product-image">
+                <img src="brakes.jpg" alt="Motorcycle Part">
+            </div>
+            <div class="product-details">
+                <h2>Disc Brake Pads</h2>
+                <p class="description">Upgrade your ride with our high-performance brake pads, designed for superior stopping power and durability. Perfect for both street and track use.</p>
+                <p class="price">$80.15</p>
+                <h4>Leave a Review</h4>
+                <form id="review-form-brakes" onsubmit="submitReview(event, 'review-form-brakes', 'reviews-container-brakes')">
+                    <textarea id="review-content-brakes" placeholder="Your Review" required></textarea>
+                    <button type="submit">Submit Review</button>
+                </form>
+                <div id="reviews-container-brakes"></div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 3: Brake Rotor -->
+        <div class="product">
+            <div class="product-image">
+                <img src="brake rotar.jpg" alt="Motorcycle Part">
+            </div>
+            <div class="product-details">
+                <h2>Brake Rotor</h2>
+                <p class="description">A brake rotor, also known as a brake disc, is a critical component in a vehicle’s braking system. It is a flat, circular disc attached to the axle and rotates with the wheel.</p>
+                <p class="price">$95.75</p>
+                <h4>Leave a Review</h4>
+                <form id="review-form-rotor" onsubmit="submitReview(event, 'review-form-rotor', 'reviews-container-rotor')">
+                    <textarea id="review-content-rotor" placeholder="Your Review" required></textarea>
+                    <button type="submit">Submit Review</button>
+                </form>
+                <div id="reviews-container-rotor"></div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 4: Shock Absorber -->
+        <div class="product">
+            <div class="product-image">
+                <img src="shockabsorber.jpg" alt="Motorcycle Part">
+            </div>
+            <div class="product-details">
+                <h2>Shock Absorber</h2>
+                <p class="description">A shock absorber is a critical component of a bicycle’s suspension system, designed to absorb and dissipate the energy from bumps, vibrations, and impacts on the trail.</p>
+                <p class="price">$79.99</p>
+                <h4>Leave a Review</h4>
+                <form id="review-form-shock" onsubmit="submitReview(event, 'review-form-shock', 'reviews-container-shock')">
+                    <textarea id="review-content-shock" placeholder="Your Review" required></textarea>
+                    <button type="submit">Submit Review</button>
+                </form>
+                <div id="reviews-container-shock"></div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 5: Riding Jacket -->
+        <div class="product">
+            <div class="product-image">
+                <img src="riding jacket.jpg" alt="Motorcycle Part">
+            </div>
+            <div class="product-details">
+                <h2>Riding Jacket</h2>
+                <p class="description">A riding jacket is a specialized outerwear designed for motorcycle or equestrian activities. It typically features durable, abrasion-resistant materials, padded or armored sections for protection, and adjustable straps for a snug fit.</p>
+                <p class="price">$100.35</p>
+                <h4>Leave a Review</h4>
+                <form id="review-form-jacket" onsubmit="submitReview(event, 'review-form-jacket', 'reviews-container-jacket')">
+                    <textarea id="review-content-jacket" placeholder="Your Review" required></textarea>
+                    <button type="submit">Submit Review</button>
+                </form>
+                <div id="reviews-container-jacket"></div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+     <!-- Video Section -->
+     <section class="video-section">
+        <h2>Product Showcase Video</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://youtu.be/0z2zcQjAODk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Motorcycle Parts Shop</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

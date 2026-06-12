@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Motorcycle Parts Store</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Motorcycle Parts Store</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="product.html">Product</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p>If you have any questions or need assistance, feel free to reach out to us through the contact form below or use the contact details provided.</p>
+                <ul>
+                    <li><strong>Address:</strong> 123 Motorcycle Lane, Bike City, BK 45678</li>
+                    <li><strong>Phone:</strong> (123) 456-7890</li>
+                    <li><strong>Email:</strong> support@motorcyclepartsstore.com</li>
+                </ul>
+            </div>
+
+            <div class="contact-form">
+                <h3>Contact Form</h3>
+                <form action="submit_form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Motorcycle Parts Store. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
